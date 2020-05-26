@@ -28,7 +28,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
   npm build
 ```
 
-## Annotated Markup
+## Annotated Markup Example
 
 ```html
 <!-- padding: rhythm[8] -->

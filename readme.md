@@ -28,6 +28,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
   npm build
 ```
 
+## Annotated Markup
 
 ```
 <!--

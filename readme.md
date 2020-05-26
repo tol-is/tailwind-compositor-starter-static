@@ -31,43 +31,18 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 ## Annotated Markup
 
 ```html
-<!--
-  p-8 bg-baseline
-  padding: rhythm[8]
-  background baseline grid
--->
+<!-- padding: rhythm[8] -->
+<body class="p-8 bg--baseline">
+  <!-- owl rhythm[7] -->
+  <main class="rhythm-7">
 
-<body class="p-8 bg-baseline">
-
-  <!--
-    rhythm-6
-    vertical lobotomized owl
-    rhythm[6]
-  -->
-  <main class="rhythm-6">
-
-    <!--
-      font-sans-600 text-13/2
-      inter semibold
-      font-size type[13]
-      leading 2 baseline
-    -->
+    <!-- Inter Semibold : 13/2 -->
     <h1 class="font-sans-600 text-13/2">Hello</h1>
 
-    <!--
-      rhythm-3
-      vertical lobotomized owl
-      rhythm[3]
-    -->
+    <!-- nested owl rhythm[3] -->
     <div class="rhythm-3">
 
-      <!--
-        font-sans-400 text-3/2 measure-8
-        inter regular
-        font-size type[3]
-        2 baseline units leading
-        max-line-width measure[8]
-      -->
+      <!-- Inter Regular : 3/2 -->
       <p class="font-sans-400 text-3/2 measure-8">
         Amet et non nisi ex ex labore irure pariatur enim quis magna amet est
         esse. Dolore ad qui ea laboris labore non anim ad ipsum laborum est.
@@ -77,33 +52,16 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
         sint culpa dolor qui veniam magna do ut laborum Lorem.
       </p>
 
-      <!--
-        font-sans-400i text-3/2 measure-8
-        inter regular italic
-        font-size type[3]
-        2 baseline units leading
-        max-line-width measure[8]
-      -->
+      <!-- Inter Regular Italic : 3/2 -->
       <p class="font-sans-400i text-3/2 measure-8">
         Amet et non nisi ex ex labore irure pariatur enim
       </p>
     </div>
 
-    <!--
-      px-7 h-7 
-      bg-mono-0 hover:bg-mono-2 text-mono-8
-      padding-left/right rhythm[7]
-      height rhythm[8]
-      background-color / text-color
-    -->
+    <!-- padding:rhythm[7] & height:rhythm[7]-->
     <button class="px-7 h-7 bg-mono-0 hover:bg-mono-2 text-mono-8">
 
-      <!--
-        font-sans-400 text-4/0
-        inter regular
-        font-size type[5]
-        leading 0
-      -->
+      <!-- Inter Regular : 4/2 -->
       <span class="font-sans-400 text-4/0">Click</span>
     </button>
   </main>

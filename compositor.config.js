@@ -9,7 +9,6 @@ const type = [14, 16, 18, 20, 22, 24, 28, 30, 32, 40, 48, 56, 60, 72];
 
 // rhythm scale in baseline units
 const rhythm = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12];
-
 rhythm.px = '1px';
 rhythm.semi = 0.5;
 

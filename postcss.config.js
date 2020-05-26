@@ -11,16 +11,22 @@ module.exports = {
     require('postcss-import')({
       plugins: [require('stylelint')],
     }),
+
+    // tailwindcss
     tailwindcss(tailwindConfigComposed),
-    ...(process.env.NODE_ENV === 'development'
+
+    // purge on build
+    ...(process.env.NODE_ENV === 'production'
       ? [
-          purgecss({
-            defaultExtractor: (content) =>
-              content.match(/[\w-/:]+(?<!:)/g) || [],
-            content: ['./src/*.html'],
-          }),
-        ]
+        purgecss({
+          defaultExtractor: (content) =>
+            content.match(/[\w-/:]+(?<!:)/g) || [],
+          content: ['./src/*.html'],
+        }),
+      ]
       : []),
+
+    // preset env
     require('postcss-preset-env')({
       stage: 1,
       autoprefixer: { grid: true },
@@ -29,5 +35,6 @@ module.exports = {
       },
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
     }),
+
   ],
 };

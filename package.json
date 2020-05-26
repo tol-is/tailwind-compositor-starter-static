@@ -30,7 +30,6 @@
     "build": "rm -rf .cache && parcel src/index.html dist --target browser"
   },
   "dependencies": {
-    "lodash.flattendeep": "^4.4.0",
-    "tailwind-compositor": "^0.0.1-rc.12"
+    "tailwind-compositor": "0.0.1-rc.13"
   }
 }

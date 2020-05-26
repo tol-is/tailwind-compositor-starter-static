@@ -6,7 +6,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 
 ### Install
 
-```
+```js
   yarn install
   // or
   npm install
@@ -14,7 +14,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 
 ### Run
 
-```
+```js
   yarn develop
   // or
   npm develop
@@ -22,7 +22,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 
 ### Build
 
-```
+```js
   yarn build
   // or
   npm build
@@ -30,7 +30,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 
 ## Annotated Markup
 
-```
+```html
 <!--
   p-8 bg-baseline
   padding: rhythm[8]

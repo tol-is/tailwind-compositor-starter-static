@@ -1,19 +1,24 @@
 const path = require('path');
 
+// root font size
 const root = 16;
+
+// baseline grid height
 const baseline = 8;
-const leading = 4;
+
+// max leading
+const leading = 2;
 
 // type scale in px
-const type = [14, 16, 18, 20, 22, 24, 28, 30, 32, 40, 48, 56, 60, 72];
+const type = [18, 20, 60, 72];
 
 // rhythm scale in baseline units
-const rhythm = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 18, 20];
+const rhythm = [0, 2, 5, 7];
 rhythm.px = '1px';
 rhythm.semi = 0.5;
 
 // measure scale in characters unit
-const measure = [10, 15, 20, 25, 30, 35, 50, 55, 60, 65];
+const measure = [10, 15, 50, 55];
 measure.auto = 'auto';
 
 // font config

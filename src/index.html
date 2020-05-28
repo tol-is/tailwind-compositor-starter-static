@@ -13,16 +13,19 @@
 
   <!-- -->
   <body class="p-3 lg:p-8">
+
     <header class="mb-7 flex flex-row items-center">
       <div class="bg-mono-0 rounded-full h-8 w-8 mr-2"></div>
-
-      <!-- use capheight for vertical centering-->
       <span class="font-sans-600 capheight-10/0"> Hello.</span>
     </header>
+    
     <main class="rhythm-7">
+      
+      <!-- nested rhythm -->
       <div class="rhythm-3">
+        
+        <!-- sans-400 baseline text 3/2 -->
         <p class="font-sans-400 text-3/2 measure-8">
-          <!-- flow baseline rhythm -->
           Amet et non nisi ex ex labore irure pariatur enim quis magna amet est
           esse. Dolore ad qui ea laboris labore non anim ad ipsum laborum est.
           Dolor labore officia eiusmod ut Lorem anim tempor nisi quis elit.
@@ -30,15 +33,19 @@
           reprehenderit anim tempor voluptate nulla aute. Lorem id esse veniam
           sint culpa dolor qui veniam magna do ut laborum Lorem.
         </p>
-
+        
+        <!-- sans 400 italic baseline text 3/2 -->
         <p class="font-sans-400i text-3/2 measure-8">
           Amet et non nisi ex ex labore irure pariatur enim
         </p>
       </div>
-
+  
+      <!-- button with fixed height -->
       <button class="px-5 h-7 bg-mono-0 hover:bg-mono-2 text-mono-8">
+        
         <!-- use capheight for vertical centering-->
-        <span class="font-sans-400 capheight-1/0 capheight-3/0">Goodbye</span>
+        <span class="font-sans-400 capheight-3/0">Goodbye</span>
+        
       </button>
     </main>
   </body>

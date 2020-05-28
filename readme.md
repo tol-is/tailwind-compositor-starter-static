@@ -33,16 +33,21 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 ```html
 <!-- padding: rhythm[8] -->
 <body class="p-8 bg--baseline">
+  <!-- header flex row -->
+  <header class="mb-7 flex flex-row items-center">
+    <div class="bg-mono-0 rounded-full h-8 w-8 mr-2"></div>
+    <!-- use capheight for vertical centering-->
+    <span class="font-sans-600 capheight-10/0"> Hello.</span>
+  </header>
+
   <!-- owl rhythm[7] -->
   <main class="rhythm-7">
-
     <!-- Inter Semibold : 13/2 -->
     <h1 class="font-sans-600 text-13/2">Hello</h1>
 
     <!-- nested owl rhythm[3] -->
     <div class="rhythm-3">
-
-      <!-- Inter Regular : 3/2 -->
+      <!-- Inter Regular : baseline 3/2 -->
       <p class="font-sans-400 text-3/2 measure-8">
         Amet et non nisi ex ex labore irure pariatur enim quis magna amet est
         esse. Dolore ad qui ea laboris labore non anim ad ipsum laborum est.
@@ -52,7 +57,7 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
         sint culpa dolor qui veniam magna do ut laborum Lorem.
       </p>
 
-      <!-- Inter Regular Italic : 3/2 -->
+      <!-- Inter Regular Italic : baseline 3/2 -->
       <p class="font-sans-400i text-3/2 measure-8">
         Amet et non nisi ex ex labore irure pariatur enim
       </p>
@@ -60,9 +65,8 @@ Uses, parcel, Postcss, Tailwind and a minimal theme.
 
     <!-- padding:rhythm[7] & height:rhythm[7]-->
     <button class="px-7 h-7 bg-mono-0 hover:bg-mono-2 text-mono-8">
-
-      <!-- Inter Regular : 4/2 -->
-      <span class="font-sans-400 text-4/0">Click</span>
+      <!-- Inter Regular : capheight 4/2 -->
+      <span class="font-sans-400 capheight-4/0">Click</span>
     </button>
   </main>
 </body>

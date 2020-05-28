@@ -18,12 +18,12 @@ module.exports = {
     // purge on build
     ...(process.env.NODE_ENV === 'production'
       ? [
-        purgecss({
-          defaultExtractor: (content) =>
-            content.match(/[\w-/:]+(?<!:)/g) || [],
-          content: ['./src/*.html'],
-        }),
-      ]
+          purgecss({
+            defaultExtractor: (content) =>
+              content.match(/[\w-/:]+(?<!:)/g) || [],
+            content: ['./src/*.html'],
+          }),
+        ]
       : []),
 
     // preset env
@@ -35,6 +35,5 @@ module.exports = {
       },
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'],
     }),
-
   ],
 };

@@ -46,7 +46,8 @@ module.exports = {
   fonts,
   options: {
     xray: true,
-    type: true,
+    baseline: true,
+    capheight: true,
     rhythm: true,
     measure: true,
   },

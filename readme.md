@@ -22,10 +22,16 @@ Starter kit for [tailwind-compositor](https://github.com/a7sc11u/tailwind-compos
 ## compositor.config.js
 
 ```js
+// root font size
 const root = 16;
+
+// baseline grid height
 const baseline = 8;
+
+// max leading
 const leading = 2;
 
+// type scale in px
 const type = [18, 20, 60, 72];
 
 // rhythm scale in baseline units

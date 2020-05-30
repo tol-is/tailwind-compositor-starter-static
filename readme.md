@@ -71,6 +71,7 @@ const fonts = [
 .font-sans-400  // Inter Regular
 .font-sans-400i // Inter Italic
 .font-sans-600 // Inter Semibold;
+.font-sans-600 // Inter Semibold Italic;
 ```
 
 ### Font Size - Baseline

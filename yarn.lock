@@ -6628,10 +6628,10 @@ table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwind-compositor@^0.0.1-rc.15:
-  version "0.0.1-rc.15"
-  resolved "https://registry.yarnpkg.com/tailwind-compositor/-/tailwind-compositor-0.0.1-rc.15.tgz#b38f9c5aefdb79ebf91ec6d30b7d6c70ba9f98bd"
-  integrity sha512-6aRH2JdLuOSAJLuB5ruefigopxNX+S1gHRTGP8OBIP0yeaXSgZBun1UZYC2togClxBiVw8H2J5XIyOP/wmM+AQ==
+tailwind-compositor@^0.0.1-rc.16:
+  version "0.0.1-rc.16"
+  resolved "https://registry.yarnpkg.com/tailwind-compositor/-/tailwind-compositor-0.0.1-rc.16.tgz#428887766dad6e8a8b7f53645ff3844fb7618ac4"
+  integrity sha512-IHy0oniY+h33AvHwoaOAtwBXBG+b9Qi/RZ8i3KIlskbfBxXFWPgtLdCQBogKZ72ByCxSvF5bDxhO38yoZLVlNg==
   dependencies:
     lodash.flattendeep "^4.4.0"
 

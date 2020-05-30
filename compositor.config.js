@@ -1,24 +1,39 @@
 const path = require('path');
 
-// root font size
-const root = 16;
-
-// baseline grid height
+// baseline grid row height in px
 const baseline = 8;
 
-// max leading
-const leading = 2;
+// max leading count
+const leading = 4;
 
 // type scale in px
-const type = [18, 20, 60, 72];
+const type = [
+  12,
+  14,
+  16,
+  18,
+  20,
+  24,
+  28,
+  32,
+  36,
+  42,
+  48,
+  54,
+  60,
+  68,
+  76,
+  84,
+  92,
+];
 
 // rhythm scale in baseline units
-const rhythm = [0, 2, 5, 7];
+const rhythm = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14];
 rhythm.px = '1px';
-rhythm.semi = 0.5;
+rhythm.half = 0.5;
 
 // measure scale in characters unit
-const measure = [10, 15, 50, 55];
+const measure = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65];
 measure.auto = 'auto';
 
 // font config
@@ -29,11 +44,6 @@ const fonts = [
     file: path.resolve('./src/fixtures/fonts/inter/Inter-Regular.woff2'),
   },
   {
-    key: 'sans-400i',
-    fallback: 'sans-serif',
-    file: path.resolve('./src/fixtures/fonts/inter/Inter-Italic.woff2'),
-  },
-  {
     key: 'sans-600',
     fallback: 'sans-serif',
     file: path.resolve('./src/fixtures/fonts/inter/Inter-SemiBold.woff2'),
@@ -41,7 +51,6 @@ const fonts = [
 ];
 
 module.exports = {
-  useRem: true,
   baseline,
   root,
   leading,
@@ -50,6 +59,8 @@ module.exports = {
   measure,
   fonts,
   options: {
+    useRem: true,
+    root: 16,
     xray: true,
     baseline: true,
     capheight: true,

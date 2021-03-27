@@ -1,5 +1,8 @@
 const path = require('path');
 
+// root font size
+const root = 16;
+
 // baseline grid row height in px
 const baseline = 8;
 
@@ -51,8 +54,8 @@ const fonts = [
 ];
 
 module.exports = {
-  baseline,
   root,
+  baseline,
   leading,
   type,
   rhythm,
@@ -60,7 +63,6 @@ module.exports = {
   fonts,
   options: {
     useRem: true,
-    root: 16,
     xray: true,
     baseline: true,
     capheight: true,
